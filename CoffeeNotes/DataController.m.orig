@@ -16,6 +16,7 @@
 
 @interface DataController ()
 
+@property (weak, nonatomic) NSManagedObjectContext *objectContext;
 
 @end
 
@@ -80,6 +81,15 @@
 
 -(UIImage *)mostRecentImageInCoffee:(Coffee *)coffee
 {
+<<<<<<< HEAD
+    UIImage *coffeeImage = [UIImage new];
+    for (Cupping *cupping in coffee.cuppings) {
+        if (cupping.photo != nil){
+            coffeeImage = cupping.photo;
+            break;
+        } else {
+            coffeeImage = nil;
+=======
     UIImage *coffeeImage = [UIImage imageNamed:@"placeholder"];
     NSURL *docsURL = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory
                                                                       inDomains:NSUserDomainMask] firstObject];
@@ -104,6 +114,7 @@
                     }
                 }
             }
+>>>>>>> 2bab017fbd0c0e06c000be57ce1129b86c5b100b
         }
     }
     

@@ -14,7 +14,6 @@
 @interface CuppingDetailViewController : UIViewController
 
 // models
-@property (weak, nonatomic) Coffee *selectedCoffee;
-@property (weak, nonatomic) Cupping *selectedCupping;
+@property (strong, nonatomic) Cupping *selectedCupping;
 
 @end

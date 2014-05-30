@@ -31,6 +31,8 @@
 		<string>Montserrat-Regular.ttf</string>
 		<string>OpenSans-Regular.ttf</string>
 	</array>
+	<key>UIFileSharingEnabled</key>
+	<true/>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

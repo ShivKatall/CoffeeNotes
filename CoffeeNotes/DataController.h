@@ -13,6 +13,7 @@
 @interface DataController : NSObject
 
 @property (strong, nonatomic) NSMutableArray *coffees;
+@property (weak, nonatomic) NSManagedObjectContext *objectContext;
 
 // Init Methods
 + (DataController *)sharedController;
@@ -26,8 +27,8 @@
 - (NSNumber *)averageRatingFromCuppingRatingInCoffee:(Coffee *)coffee;
 
 // Sorting Methods
-- (void)sortByCoffeeNameOrOrigin;
-- (void)sortByCuppingDateInCoffee:(Coffee *)coffee;
+//- (void)sortByCoffeeNameOrOrigin;
+//- (void)sortByCuppingDateInCoffee:(Coffee *)coffee;
 
 + (NSArray *)cuppingsSortedByDateForCoffee:(Coffee *)coffee;
 

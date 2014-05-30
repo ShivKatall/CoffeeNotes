@@ -35,8 +35,6 @@
 // other
 @property (strong, nonatomic) UIActionSheet *addOrChangePhotoActionSheet;
 
-@property (weak, nonatomic) NSManagedObjectContext *managedObjectContext;
-
 @end
 
 
@@ -46,8 +44,7 @@
 {
     [super viewDidLoad];
     
-    AppDelegate *appDelegate                = [UIApplication sharedApplication].delegate;
-    _managedObjectContext               = appDelegate.objectContext;
+//    AppDelegate *appDelegate                = [UIApplication sharedApplication].delegate;
 
     _nameOrOriginLabel.text       = _selectedCoffee.nameOrOrigin;
     _roasterLabel.text                  = _selectedCoffee.roaster;
@@ -145,7 +142,7 @@
         if (_editableCupping) {
             newCupping = _editableCupping;
         } else {
-            newCupping = [NSEntityDescription insertNewObjectForEntityForName:@"Cupping" inManagedObjectContext:self.selectedCoffee.managedObjectContext];;
+            newCupping = [NSEntityDescription insertNewObjectForEntityForName:@"Cupping" inManagedObjectContext:[DataController sharedController].objectContext];
         }
         
         newCupping.location             = _locationTextField.text;
@@ -162,7 +159,7 @@
         newCupping.coffee               = _selectedCoffee;
         
         NSError *error;
-        [_selectedCoffee.managedObjectContext save:&error];
+        [[DataController sharedController].objectContext save:&error];
         
     } else if ([segue.identifier isEqualToString:@"PickCuppingDateFromCupping"]) {
         
@@ -246,16 +243,16 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    UIImage *originalImage = [info objectForKey:UIImagePickerControllerOriginalImage];
+    UIImage *editedImage = [info objectForKey:UIImagePickerControllerEditedImage];
     
     [self dismissViewControllerAnimated:YES completion:^{
         NSLog(@"Completed");
         
-        _photoImageView.image = originalImage;
+        _photoImageView.image = editedImage;
         
         ALAssetsLibrary *assetsLibrary = [ALAssetsLibrary new];
         if ([ALAssetsLibrary authorizationStatus] == ALAuthorizationStatusAuthorized || [ALAssetsLibrary authorizationStatus] == ALAuthorizationStatusNotDetermined) {
-            [assetsLibrary writeImageToSavedPhotosAlbum:originalImage.CGImage
+            [assetsLibrary writeImageToSavedPhotosAlbum:editedImage.CGImage
                                             orientation:ALAssetOrientationUp
                                         completionBlock:^(NSURL *assetURL, NSError *error) {
                                             if (error) {

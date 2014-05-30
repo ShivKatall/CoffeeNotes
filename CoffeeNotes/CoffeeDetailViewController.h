@@ -18,6 +18,6 @@
 @interface CoffeeDetailViewController : UIViewController
 
 // models
-@property (nonatomic, weak) Coffee *selectedCoffee;
+@property (nonatomic, strong) Coffee *selectedCoffee;
 
 @end

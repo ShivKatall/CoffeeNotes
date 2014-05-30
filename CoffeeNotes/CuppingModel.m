@@ -22,7 +22,7 @@
         self.roastDate              = [aDecoder decodeObjectForKey:@"roastDate"];
         self.brewingMethod          = [aDecoder decodeObjectForKey:@"brewingMethod"];
         self.cuppingRating          = [aDecoder decodeObjectForKey:@"cuppingRating"];
-        self.image = [UIImage imageWithData:[aDecoder decodeObjectForKey:@"image"]];
+        self.image                  = [UIImage imageWithData:[aDecoder decodeObjectForKey:@"image"]];
         self.cuppingNotes           = [aDecoder decodeObjectForKey:@"cuppingNotes"];
 
     }
