@@ -21,6 +21,9 @@
 @dynamic roastDate;
 @dynamic roaster;
 @dynamic coffee;
+<<<<<<< HEAD
+//@dynamic thumbnail;
+=======
 @dynamic photoPath;
 
 @synthesize photo = _photo;
@@ -30,12 +33,8 @@
     NSLog(@"Requesting Cupping Photo");
     if (!_photo) {
         NSLog(@"Didn't have a photo");
-        if (self.photoPath) {
-            NSLog(@"Loading from path: %@", self.photoPath);
-            _photo = [UIImage imageWithContentsOfFile:self.photoPath];
-        } else {
-            _photo = [UIImage imageNamed:@"cupping-detail"];
-        }
+        NSLog(@"Loading from path: %@", self.photoPath);
+        _photo = [UIImage imageWithContentsOfFile:self.photoPath];
     }
     
     return _photo;
@@ -68,5 +67,6 @@
                                                              inDomains:NSUserDomainMask] firstObject];
     return docsURL.path;
 }
+>>>>>>> 2bab017fbd0c0e06c000be57ce1129b86c5b100b
 
 @end

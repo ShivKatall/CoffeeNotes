@@ -196,7 +196,11 @@
                                                                     <color key="textColor" red="0.39607846740000002" green="0.23921570180000001" blue="0.050980396570000003" alpha="1" colorSpace="deviceRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cupping-cell.png" translatesAutoresizingMaskIntoConstraints="NO" id="oZA-lg-ixu">
+<<<<<<< HEAD
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cupping-cell.png" translatesAutoresizingMaskIntoConstraints="NO" id="oZA-lg-ixu">
+=======
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oZA-lg-ixu">
+>>>>>>> 2bab017fbd0c0e06c000be57ce1129b86c5b100b
                                                                     <rect key="frame" x="20" y="2" width="65" height="65"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <constraints>
@@ -207,7 +211,7 @@
                                                             </subviews>
                                                             <constraints>
                                                                 <constraint firstItem="oZA-lg-ixu" firstAttribute="centerY" secondItem="NDC-s8-ntd" secondAttribute="centerY" id="1Um-0g-ORl"/>
-                                                                <constraint firstItem="oZA-lg-ixu" firstAttribute="leading" secondItem="NDC-s8-ntd" secondAttribute="leading" constant="20" id="iXA-MO-eUG"/>
+                                                                <constraint firstAttribute="trailing" secondItem="oZA-lg-ixu" secondAttribute="trailing" constant="195" id="qiG-53-QoK"/>
                                                             </constraints>
                                                         </tableViewCellContentView>
                                                         <color key="backgroundColor" red="0.83529418710000003" green="0.80392163989999998" blue="0.7254902124" alpha="1" colorSpace="deviceRGB"/>
@@ -1574,9 +1578,15 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="BBJ-LZ-y2C"/>
+<<<<<<< HEAD
         <segue reference="Zf5-Qt-1AL"/>
-        <segue reference="YEJ-8o-byp"/>
+        <segue reference="BBJ-LZ-y2C"/>
+        <segue reference="I4O-TH-JF1"/>
+=======
+>>>>>>> 2bab017fbd0c0e06c000be57ce1129b86c5b100b
         <segue reference="bBV-Wx-ldD"/>
+        <segue reference="I4O-TH-JF1"/>
+        <segue reference="7RQ-9d-aF7"/>
+        <segue reference="Zf5-Qt-1AL"/>
     </inferredMetricsTieBreakers>
 </document>

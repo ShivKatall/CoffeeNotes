@@ -35,9 +35,10 @@
 {
     [super viewDidLoad];
     
+    
     // labels
-    _nameOrOriginLabel.text         = _selectedCoffee.nameOrOrigin;
-    _roasterLabel.text              = _selectedCoffee.roaster;
+    _nameOrOriginLabel.text         = _selectedCupping.coffee.nameOrOrigin;
+    _roasterLabel.text              = _selectedCupping.coffee.roaster;
     _locationLabel.text             = _selectedCupping.location;
     _cuppingDateLabel.text          = [[DataController sharedController] createStringFromDate:_selectedCupping.cuppingDate];
     _roastDateLabel.text            = [[DataController sharedController] createStringFromDate:_selectedCupping.roastDate];
@@ -82,7 +83,7 @@
     if ([segue.identifier isEqualToString:@"EditCuppingSegue"]) {
         AddOrEditCuppingViewController *destination = segue.destinationViewController;
         destination.editableCupping = _selectedCupping;
-        destination.selectedCoffee = _selectedCoffee;
+        destination.selectedCoffee = _selectedCupping.coffee;
     }
 }
 

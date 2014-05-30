@@ -2,10 +2,8 @@
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Coffee" representedClassName="Coffee" syncable="YES">
         <attribute name="averageRating" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="mostRecentPhoto" optional="YES" attributeType="Transformable" valueTransformerName="ImageTransformer" syncable="YES"/>
         <attribute name="nameOrOrigin" attributeType="String" syncable="YES"/>
         <attribute name="roaster" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="thumbnail" optional="YES" attributeType="Binary" syncable="YES"/>
         <relationship name="cuppings" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Cupping" inverseName="coffee" inverseEntity="Cupping" syncable="YES"/>
     </entity>
     <entity name="Cupping" representedClassName="Cupping" syncable="YES">
@@ -14,15 +12,14 @@
         <attribute name="cuppingNotes" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nameOrOrigin" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="photo" optional="YES" attributeType="Transformable" valueTransformerName="ImageTransformer" syncable="YES"/>
+        <attribute name="photoPath" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="rating" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="roastDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="roaster" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="thumbnail" optional="YES" attributeType="Binary" syncable="YES"/>
         <relationship name="coffee" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Coffee" inverseName="cuppings" inverseEntity="Coffee" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Coffee" positionX="0" positionY="0" width="128" height="133"/>
-        <element name="Cupping" positionX="160" positionY="9" width="128" height="208"/>
+        <element name="Coffee" positionX="0" positionY="0" width="128" height="103"/>
+        <element name="Cupping" positionX="160" positionY="9" width="128" height="193"/>
     </elements>
 </model>

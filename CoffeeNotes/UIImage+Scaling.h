@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage (Scaling)
-
+- (UIImage *)resizedImage:(CGSize)newSize;
 @end

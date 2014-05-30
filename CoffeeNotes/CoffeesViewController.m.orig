@@ -14,6 +14,8 @@
 
 @interface CoffeesViewController () <UITableViewDelegate, UITableViewDataSource>
 
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+
 @end
 
 
@@ -104,9 +106,16 @@
         cell.coffeeCellAverageRating.value = 0.0;
     }
     
-    if (coffee.photo) {
-        cell.coffeeCellImage.image = coffee.photo;
+<<<<<<< HEAD
+    coffee.mostRecentPhoto = [[DataController sharedController]mostRecentImageInCoffee:coffee];
+    if (coffee.mostRecentPhoto) {
+        cell.coffeeCellImage.image = coffee.mostRecentPhoto;
     }
+    
+    cell.coffeeCellImage.layer.cornerRadius = 11;
+    cell.coffeeCellImage.layer.masksToBounds = YES;
+=======
+    cell.coffeeCellImage.image = coffee.photo;
     cell.coffeeCellImage.layer.cornerRadius = 11;
     cell.coffeeCellImage.layer.masksToBounds = YES;
 }
@@ -116,6 +125,7 @@
     CoffeeCell *cell    = [tableView dequeueReusableCellWithIdentifier:@"CoffeeCell" forIndexPath:indexPath];
     
     [self configureCell:cell forIndexPath:indexPath];
+>>>>>>> 2bab017fbd0c0e06c000be57ce1129b86c5b100b
     
     return cell;
 }

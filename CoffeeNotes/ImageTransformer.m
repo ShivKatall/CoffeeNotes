@@ -7,6 +7,7 @@
 //
 
 #import "ImageTransformer.h"
+#import "UIImage+Scaling.h"
 
 @implementation ImageTransformer
 
@@ -22,15 +23,12 @@
 
 - (id)transformedValue:(id)value
 {
-    NSData *data = UIImageJPEGRepresentation(value, .5);
-    
-    return data;
+    return UIImageJPEGRepresentation(value, .5);
 }
 
 - (id)reverseTransformedValue:(id)value
 {
-    UIImage *image = [[UIImage alloc] initWithData:value];
-    return image;
+    return [[UIImage alloc] initWithData:value];
 }
 
 @end

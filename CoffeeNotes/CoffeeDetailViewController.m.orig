@@ -51,12 +51,13 @@
     [_averageStarRatingView setStepInterval:0.5];
     [_averageStarRatingView setUserInteractionEnabled:NO];
     
-//    _nameOrOriginLabel.font = [UIFont fontWithName:@"Montserrat-Regular" size:47.0];
-    
     _mostRecentPhotoImageView.layer.cornerRadius = 11;
     _mostRecentPhotoImageView.layer.masksToBounds = YES;
     
+//    _nameOrOriginLabel.font = [UIFont fontWithName:@"Montserrat-Regular" size:47.0];
+    
     _cuppingDateSortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"cuppingDate" ascending:YES];
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -68,12 +69,18 @@
     if (![[[DataController sharedController]averageRatingFromCuppingRatingInCoffee:_selectedCoffee]floatValue]) {
         _averageStarRatingView.value = 0.0;
     }
-    
-    if (_selectedCoffee.photo) {
-        _mostRecentPhotoImageView.image = _selectedCoffee.photo;
-    }
-//    _mostRecentPhotoImageView.image = _selectedCoffee.photo;
 
+    _selectedCoffee.mostRecentPhoto = [[DataController sharedController]mostRecentImageInCoffee:_selectedCoffee];
+    
+<<<<<<< HEAD
+    if (_selectedCoffee.mostRecentPhoto) {
+        _mostRecentPhotoImageView.image = _selectedCoffee.mostRecentPhoto;
+    }
+=======
+    _mostRecentPhotoImageView.image = _selectedCoffee.photo;
+    _mostRecentPhotoImageView.layer.cornerRadius = 11;
+    _mostRecentPhotoImageView.layer.masksToBounds = YES;
+>>>>>>> 2bab017fbd0c0e06c000be57ce1129b86c5b100b
     
     [_cuppingsTableView reloadData];
 }
@@ -141,12 +148,12 @@
     cell.cuppingCellDateLabel.text = [[DataController sharedController] createStringFromDate:cupping.cuppingDate];
     cell.cuppingCellLocationLabel.text = [NSString stringWithFormat:@"%@", cupping.location];
     
-    cell.cuppingCellImageView.layer.cornerRadius = 11;
-    cell.cuppingCellImageView.layer.masksToBounds = YES;
     if (cupping.photo){
         cell.cuppingCellImageView.image = cupping.photo;
     }
     
+    cell.cuppingCellImageView.layer.cornerRadius = 5;
+    cell.cuppingCellImageView.layer.masksToBounds = YES;
     
     
     return cell;

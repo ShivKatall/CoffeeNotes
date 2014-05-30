@@ -16,6 +16,9 @@
 @dynamic nameOrOrigin;
 @dynamic roaster;
 @dynamic cuppings;
+<<<<<<< HEAD
+//@dynamic thumbnail;
+=======
 
 @synthesize photo = _photo;
 
@@ -23,7 +26,7 @@
 {
     UIImage *mostRecentPhoto;
     
-    for (Cupping *cupping in self.cuppings.allObjects) {
+    for (Cupping *cupping in self.cuppings.allObjects.reverseObjectEnumerator.allObjects) {
         if (cupping.photoPath) {
             mostRecentPhoto = cupping.photo;
         }
@@ -32,4 +35,5 @@
     return mostRecentPhoto;
 }
 
+>>>>>>> 2bab017fbd0c0e06c000be57ce1129b86c5b100b
 @end
