@@ -51,9 +51,13 @@
     
     
     // views and imageViews
-    _photoImageView.image           = _selectedCupping.photo;
+    
     _photoImageView.layer.cornerRadius = 11;
     _photoImageView.layer.masksToBounds = YES;
+    
+    if (_selectedCupping.photo) {
+        _photoImageView.image           = _selectedCupping.photo;
+    }
     
     _notesTextView.layer.cornerRadius = 11;
     

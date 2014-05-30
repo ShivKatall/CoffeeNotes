@@ -103,9 +103,12 @@
     }
     
     coffee.mostRecentPhoto = [[DataController sharedController]mostRecentImageInCoffee:coffee];
+    if (coffee.mostRecentPhoto) {
+        cell.coffeeCellImage.image = coffee.mostRecentPhoto;
+    }
+    
     cell.coffeeCellImage.layer.cornerRadius = 11;
     cell.coffeeCellImage.layer.masksToBounds = YES;
-    cell.coffeeCellImage.image = coffee.mostRecentPhoto;
     
     return cell;
 }

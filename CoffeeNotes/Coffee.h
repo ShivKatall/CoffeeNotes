@@ -18,7 +18,7 @@
 @property (nonatomic, retain) NSString * nameOrOrigin;
 @property (nonatomic, retain) NSString * roaster;
 @property (nonatomic, retain) NSSet *cuppings;
-@property (nonatomic, retain) NSData *thumbnail;
+//@property (nonatomic, retain) NSData *thumbnail;
 @end
 
 @interface Coffee (CoreDataGeneratedAccessors)

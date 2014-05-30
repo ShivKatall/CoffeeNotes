@@ -71,8 +71,10 @@
         _chooseRoastDateFromCuppingButton.titleLabel.text       = [[DataController sharedController]createStringFromDate:_roastDateHolder];
         _mainViewSaveButton.enabled                             = (_cuppingDateHolder != nil);
         _navigationBarSaveButton.enabled                        = (_cuppingDateHolder != nil);
-        _photoImageView.image                                   = _editableCupping.photo;
         
+        if (_editableCupping.photo) {
+            _photoImageView.image                                   = _editableCupping.photo;
+        }
     }
     
     _photoImageView.layer.cornerRadius = 11;

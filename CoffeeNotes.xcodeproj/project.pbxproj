@@ -18,6 +18,11 @@
 		3D5EB87919268D4500C77074 /* AppDelegate+CoreDataContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EB87819268D4500C77074 /* AppDelegate+CoreDataContext.m */; };
 		3D5EB87C192696DC00C77074 /* Cupping.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EB87B192696DC00C77074 /* Cupping.m */; };
 		3D5EB87F192696DD00C77074 /* Coffee.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EB87E192696DD00C77074 /* Coffee.m */; };
+		3D907C5B1937FCBE00D7839B /* add-coffee-cupping@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D907C561937FCBE00D7839B /* add-coffee-cupping@2x.png */; };
+		3D907C5C1937FCBE00D7839B /* cofee-cell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D907C571937FCBE00D7839B /* cofee-cell@2x.png */; };
+		3D907C5D1937FCBE00D7839B /* coffee-detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D907C581937FCBE00D7839B /* coffee-detail@2x.png */; };
+		3D907C5E1937FCBE00D7839B /* cupping-cell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D907C591937FCBE00D7839B /* cupping-cell@2x.png */; };
+		3D907C5F1937FCBE00D7839B /* cupping-detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D907C5A1937FCBE00D7839B /* cupping-detail@2x.png */; };
 		3D9DD2BB1937AEE00092D2AD /* UIImage+Scaling.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DD2BA1937AEE00092D2AD /* UIImage+Scaling.m */; };
 		3DA550FA1925C3A400FC0BCF /* CuppingDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA550F91925C3A400FC0BCF /* CuppingDatePickerViewController.m */; };
 		3DD88732190B1180002521AD /* CoffeeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD88731190B1180002521AD /* CoffeeDetailViewController.m */; };
@@ -57,6 +62,11 @@
 		3D5EB87B192696DC00C77074 /* Cupping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cupping.m; sourceTree = "<group>"; };
 		3D5EB87D192696DD00C77074 /* Coffee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coffee.h; sourceTree = "<group>"; };
 		3D5EB87E192696DD00C77074 /* Coffee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coffee.m; sourceTree = "<group>"; };
+		3D907C561937FCBE00D7839B /* add-coffee-cupping@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-coffee-cupping@2x.png"; sourceTree = "<group>"; };
+		3D907C571937FCBE00D7839B /* cofee-cell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cofee-cell@2x.png"; sourceTree = "<group>"; };
+		3D907C581937FCBE00D7839B /* coffee-detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coffee-detail@2x.png"; sourceTree = "<group>"; };
+		3D907C591937FCBE00D7839B /* cupping-cell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cupping-cell@2x.png"; sourceTree = "<group>"; };
+		3D907C5A1937FCBE00D7839B /* cupping-detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cupping-detail@2x.png"; sourceTree = "<group>"; };
 		3D9DD2B91937AEE00092D2AD /* UIImage+Scaling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Scaling.h"; sourceTree = "<group>"; };
 		3D9DD2BA1937AEE00092D2AD /* UIImage+Scaling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Scaling.m"; sourceTree = "<group>"; };
 		3DA550F81925C3A400FC0BCF /* CuppingDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CuppingDatePickerViewController.h; sourceTree = "<group>"; };
@@ -162,6 +172,19 @@
 			path = CoffeeNotes;
 			sourceTree = "<group>";
 		};
+		3D907C601937FCC400D7839B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3D296979193645AF0044BD8A /* right-arrow@2x.png */,
+				3D907C561937FCBE00D7839B /* add-coffee-cupping@2x.png */,
+				3D907C571937FCBE00D7839B /* cofee-cell@2x.png */,
+				3D907C581937FCBE00D7839B /* coffee-detail@2x.png */,
+				3D907C591937FCBE00D7839B /* cupping-cell@2x.png */,
+				3D907C5A1937FCBE00D7839B /* cupping-detail@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		3DA550FB1925C3BA00FC0BCF /* AddOrEditCupping */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,7 +283,7 @@
 		3DE4600F190984D8002AF3C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3D296979193645AF0044BD8A /* right-arrow@2x.png */,
+				3D907C601937FCC400D7839B /* Images */,
 				3DE46020190984D8002AF3C0 /* Images.xcassets */,
 				3DE46010190984D8002AF3C0 /* CoffeeNotes-Info.plist */,
 				3DE46011190984D8002AF3C0 /* InfoPlist.strings */,
@@ -342,13 +365,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D907C5F1937FCBE00D7839B /* cupping-detail@2x.png in Resources */,
 				3D29697A193645AF0044BD8A /* right-arrow@2x.png in Resources */,
+				3D907C5D1937FCBE00D7839B /* coffee-detail@2x.png in Resources */,
 				3D094972192C0447002508B0 /* Montserrat-Regular.ttf in Resources */,
+				3D907C5E1937FCBE00D7839B /* cupping-cell@2x.png in Resources */,
 				3D094973192C0447002508B0 /* OpenSans-Regular.ttf in Resources */,
 				3DE46021190984D8002AF3C0 /* Images.xcassets in Resources */,
 				3DE46013190984D8002AF3C0 /* InfoPlist.strings in Resources */,
 				3DFC9A20190EE3F500970C84 /* DataSourcePropertyList.plist in Resources */,
 				3DE4601C190984D8002AF3C0 /* Main.storyboard in Resources */,
+				3D907C5C1937FCBE00D7839B /* cofee-cell@2x.png in Resources */,
+				3D907C5B1937FCBE00D7839B /* add-coffee-cupping@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

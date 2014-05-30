@@ -51,6 +51,9 @@
     [_averageStarRatingView setStepInterval:0.5];
     [_averageStarRatingView setUserInteractionEnabled:NO];
     
+    _mostRecentPhotoImageView.layer.cornerRadius = 11;
+    _mostRecentPhotoImageView.layer.masksToBounds = YES;
+    
 //    _nameOrOriginLabel.font = [UIFont fontWithName:@"Montserrat-Regular" size:47.0];
     
     _cuppingDateSortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"cuppingDate" ascending:YES];
@@ -59,7 +62,7 @@
 
 -(void)viewDidAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
+    [super viewDidAppear:animated];
     
     _cuppings = [DataController cuppingsSortedByDateForCoffee:_selectedCoffee];
     
@@ -68,10 +71,12 @@
     if (![[[DataController sharedController]averageRatingFromCuppingRatingInCoffee:_selectedCoffee]floatValue]) {
         _averageStarRatingView.value = 0.0;
     }
+
+    _selectedCoffee.mostRecentPhoto = [[DataController sharedController]mostRecentImageInCoffee:_selectedCoffee];
     
-    _mostRecentPhotoImageView.image = [[DataController sharedController]mostRecentImageInCoffee:_selectedCoffee];
-    _mostRecentPhotoImageView.layer.cornerRadius = 11;
-    _mostRecentPhotoImageView.layer.masksToBounds = YES;
+    if (_selectedCoffee.mostRecentPhoto) {
+        _mostRecentPhotoImageView.image = _selectedCoffee.mostRecentPhoto;
+    }
     
     [_cuppingsTableView reloadData];
 }
@@ -143,9 +148,13 @@
     cell.cuppingCellDateLabel.text = [[DataController sharedController] createStringFromDate:cupping.cuppingDate];
     cell.cuppingCellLocationLabel.text = [NSString stringWithFormat:@"%@", cupping.location];
     
+    if (cupping.photo){
+        cell.cuppingCellImageView.image = cupping.photo;
+    }
+    
     cell.cuppingCellImageView.layer.cornerRadius = 5;
     cell.cuppingCellImageView.layer.masksToBounds = YES;
-    cell.cuppingCellImageView.image = cupping.photo;
+    
     
     return cell;
 }

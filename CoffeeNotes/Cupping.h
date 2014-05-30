@@ -23,5 +23,5 @@
 @property (nonatomic, retain) NSDate * roastDate;
 @property (nonatomic, retain) NSString * roaster;
 @property (nonatomic, retain) Coffee *coffee;
-@property (nonatomic, retain) NSData *thumbnail;
+//@property (nonatomic, retain) NSData *thumbnail;
 @end

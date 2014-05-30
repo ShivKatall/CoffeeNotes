@@ -22,6 +22,6 @@
 @dynamic roastDate;
 @dynamic roaster;
 @dynamic coffee;
-@dynamic thumbnail;
+//@dynamic thumbnail;
 
 @end

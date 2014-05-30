@@ -173,7 +173,7 @@
         
         NSNumber *numberFromFloatValue  = [[NSNumber alloc]initWithFloat:_coffeeCuppingRatingView.value];
         newCupping.rating               = numberFromFloatValue;
-        newCupping.thumbnail            = 
+//        newCupping.thumbnail            = 
         newCupping.photo                = _photoImageView.image;
         newCupping.cuppingNotes         = _notesTextView.text;
         
@@ -293,26 +293,26 @@
             
             ALAssetsLibrary *assetsLibrary = [ALAssetsLibrary new];
             if ([ALAssetsLibrary authorizationStatus] == ALAuthorizationStatusAuthorized || [ALAssetsLibrary authorizationStatus] == ALAuthorizationStatusNotDetermined) {
-//                [assetsLibrary writeImageToSavedPhotosAlbum:originalImage.CGImage
-//                                                orientation:ALAssetOrientationUp
-//                                            completionBlock:^(NSURL *assetURL, NSError *error) {
-//                                                if (error) {
-//                                                    NSLog(@"Error Saving Image: %@", error.localizedDescription);
-//                                                }
-//                                            }];
-                NSData *imageData = UIImageJPEGRepresentation(originalImage, 0.4);
-                [assetsLibrary writeImageDataToSavedPhotosAlbum:imageData
-                                                       metadata:nil
-                                                completionBlock:^(NSURL *assetURL, NSError *error) {
-                                                    if (error) {
-                                                        NSLog(@"Error Saving Image: %@", error.localizedDescription);
-                                                    } else {
-                                                        __block UIImage *smallerImage = [UIImage imageWithContentsOfFile:assetURL.path];
-                                                        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-                                                            self.photoImageView.image = smallerImage;
-                                                        }];
-                                                    }
-                                                }];
+                [assetsLibrary writeImageToSavedPhotosAlbum:originalImage.CGImage
+                                                orientation:ALAssetOrientationUp
+                                            completionBlock:^(NSURL *assetURL, NSError *error) {
+                                                if (error) {
+                                                    NSLog(@"Error Saving Image: %@", error.localizedDescription);
+                                                }
+                                            }];
+//                NSData *imageData = UIImageJPEGRepresentation(originalImage, 0.4);
+//                [assetsLibrary writeImageDataToSavedPhotosAlbum:imageData
+//                                                       metadata:nil
+//                                                completionBlock:^(NSURL *assetURL, NSError *error) {
+//                                                    if (error) {
+//                                                        NSLog(@"Error Saving Image: %@", error.localizedDescription);
+//                                                    } else {
+//                                                        __block UIImage *smallerImage = [UIImage imageWithContentsOfFile:assetURL.path];
+//                                                        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+//                                                            self.photoImageView.image = smallerImage;
+//                                                        }];
+//                                                    }
+//                                                }];
             } else if ([ALAssetsLibrary authorizationStatus] == ALAuthorizationStatusDenied || [ALAssetsLibrary authorizationStatus] == ALAuthorizationStatusRestricted) {
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Cannot Save Photo"
                                                                     message:@"Authorization status not granted"

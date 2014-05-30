@@ -82,9 +82,11 @@
 {
     UIImage *coffeeImage = [UIImage new];
     for (Cupping *cupping in coffee.cuppings) {
-        if (cupping.photo){
+        if (cupping.photo != nil){
             coffeeImage = cupping.photo;
             break;
+        } else {
+            coffeeImage = nil;
         }
     }
     return coffeeImage;

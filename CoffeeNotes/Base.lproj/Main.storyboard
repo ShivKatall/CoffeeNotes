@@ -51,14 +51,9 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EwB-WS-504">
-                                                    <rect key="frame" x="0.0" y="147" width="88" height="84"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iBZ-0f-YRy">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cofee-cell.png" translatesAutoresizingMaskIntoConstraints="NO" id="iBZ-0f-YRy">
                                                     <rect key="frame" x="20" y="17" width="92" height="92"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.96470594409999999" green="0.96470594409999999" blue="0.95686280729999995" alpha="1" colorSpace="deviceRGB"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" red="0.83529418710000003" green="0.80392163989999998" blue="0.7254902124" alpha="1" colorSpace="deviceRGB"/>
@@ -201,10 +196,9 @@
                                                                     <color key="textColor" red="0.39607846740000002" green="0.23921570180000001" blue="0.050980396570000003" alpha="1" colorSpace="deviceRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oZA-lg-ixu">
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cupping-cell.png" translatesAutoresizingMaskIntoConstraints="NO" id="oZA-lg-ixu">
                                                                     <rect key="frame" x="20" y="2" width="65" height="65"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <color key="backgroundColor" red="0.96470594409999999" green="0.96470594409999999" blue="0.95686280729999995" alpha="1" colorSpace="deviceRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="65" id="1l2-WB-CnN"/>
                                                                         <constraint firstAttribute="width" constant="65" id="hhl-ap-pP4"/>
@@ -258,10 +252,9 @@
                                                     <segue destination="hnC-WX-J8e" kind="push" identifier="AddCuppingSegue" id="YEJ-8o-byp"/>
                                                 </connections>
                                             </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tar-hz-RCV">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee-detail.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tar-hz-RCV">
                                                 <rect key="frame" x="83" y="295" width="154" height="154"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.96470594409999999" green="0.96470594409999999" blue="0.95686280729999995" alpha="1" colorSpace="deviceRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="154" id="dt4-2V-8Nc"/>
                                                     <constraint firstAttribute="width" constant="154" id="dv9-42-TVe"/>
@@ -498,10 +491,9 @@
                                                     <constraint firstAttribute="height" constant="54" id="OsD-1C-FwD"/>
                                                 </constraints>
                                             </view>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MPo-A6-Gdf">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-coffee-cupping.png" translatesAutoresizingMaskIntoConstraints="NO" id="MPo-A6-Gdf">
                                                 <rect key="frame" x="200" y="618" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.96470594409999999" green="0.96470594409999999" blue="0.95686280729999995" alpha="1" colorSpace="deviceRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="02L-3E-5r0"/>
                                                     <constraint firstAttribute="height" constant="100" id="5oT-ca-urY"/>
@@ -966,10 +958,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                                 <color key="textColor" red="0.39607846740000002" green="0.23921570180000001" blue="0.050980396570000003" alpha="1" colorSpace="deviceRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DA3-Jj-S8K">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cupping-detail.png" translatesAutoresizingMaskIntoConstraints="NO" id="DA3-Jj-S8K">
                                                 <rect key="frame" x="20" y="495" width="280" height="280"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.96470594409999999" green="0.96470594409999999" blue="0.95686280729999995" alpha="1" colorSpace="deviceRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="280" id="S0h-pG-q1y"/>
                                                     <constraint firstAttribute="width" constant="280" id="pg3-f6-IXc"/>
@@ -1209,10 +1200,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                                     <constraint firstAttribute="width" constant="280" id="cpU-Bh-YAp"/>
                                                 </constraints>
                                             </view>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LhG-O7-EKz">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-coffee-cupping.png" translatesAutoresizingMaskIntoConstraints="NO" id="LhG-O7-EKz">
                                                 <rect key="frame" x="158" y="564" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.96470594409999999" green="0.96470594409999999" blue="0.95686280729999995" alpha="1" colorSpace="deviceRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="gvS-kl-vb7"/>
                                                     <constraint firstAttribute="width" constant="100" id="zNb-cB-O8Q"/>
@@ -1572,6 +1562,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <point key="canvasLocation" x="2394" y="-763"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add-coffee-cupping.png" width="100" height="100"/>
+        <image name="cofee-cell.png" width="92" height="92"/>
+        <image name="coffee-detail.png" width="154" height="154"/>
+        <image name="cupping-cell.png" width="65" height="65"/>
+        <image name="cupping-detail.png" width="290" height="290"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
@@ -1579,7 +1576,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="Zf5-Qt-1AL"/>
-        <segue reference="7RQ-9d-aF7"/>
+        <segue reference="BBJ-LZ-y2C"/>
         <segue reference="I4O-TH-JF1"/>
         <segue reference="bBV-Wx-ldD"/>
     </inferredMetricsTieBreakers>

@@ -17,5 +17,5 @@
 @dynamic nameOrOrigin;
 @dynamic roaster;
 @dynamic cuppings;
-@dynamic thumbnail;
+//@dynamic thumbnail;
 @end
