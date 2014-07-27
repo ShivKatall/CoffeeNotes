@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>92D88E05-EDE5-4D29-8ED6-656FBA7D0939</string>
+	<string>D5D453C9-4A99-4A16-ABA0-C8A859D0E180</string>
 	<key>IDESourceControlProjectName</key>
 	<string>CoffeeNotes</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>E039B483-F677-4988-8268-8DE7FB2C400F</key>
-		<string>https://github.com/ShivKatall/CoffeeNotes</string>
+		<key>DFC30FBF-CEF8-4CCA-BC3D-8413466FE5A8</key>
+		<string>ssh://github.com/ShivKatall/CoffeeNotes.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>CoffeeNotes.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E039B483-F677-4988-8268-8DE7FB2C400F</key>
+		<key>DFC30FBF-CEF8-4CCA-BC3D-8413466FE5A8</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/ShivKatall/CoffeeNotes</string>
+	<string>ssh://github.com/ShivKatall/CoffeeNotes.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E039B483-F677-4988-8268-8DE7FB2C400F</string>
+	<string>DFC30FBF-CEF8-4CCA-BC3D-8413466FE5A8</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E039B483-F677-4988-8268-8DE7FB2C400F</string>
+			<string>DFC30FBF-CEF8-4CCA-BC3D-8413466FE5A8</string>
 			<key>IDESourceControlWCCName</key>
 			<string>CoffeeNotes</string>
 		</dict>
