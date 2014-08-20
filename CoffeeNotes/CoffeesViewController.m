@@ -104,9 +104,10 @@
         cell.coffeeCellAverageRating.value = 0.0;
     }
     
-    if (coffee.photo) {
+    if (coffee.photo != nil) {
         cell.coffeeCellImage.image = coffee.photo;
     }
+    
     cell.coffeeCellImage.layer.cornerRadius = 11;
     cell.coffeeCellImage.layer.masksToBounds = YES;
 }

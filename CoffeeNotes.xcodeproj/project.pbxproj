@@ -211,9 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				3D51816A191BF10F0007D85C /* Model.xcdatamodeld */,
-				3D5EB87A192696DC00C77074 /* Cupping.h */,
 				3D5EB87D192696DD00C77074 /* Coffee.h */,
 				3D5EB87E192696DD00C77074 /* Coffee.m */,
+				3D5EB87A192696DC00C77074 /* Cupping.h */,
 				3D5EB87B192696DC00C77074 /* Cupping.m */,
 			);
 			name = Model;
@@ -222,6 +222,7 @@
 		3DD8873D190B11FA002521AD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3DE4601A190984D8002AF3C0 /* Main.storyboard */,
 				3D79B3F01911EF3800753DD1 /* Coffees */,
 				3D79B3F11911EF4F00753DD1 /* CoffeeDetail */,
 				3DD88733190B1196002521AD /* CuppingDetailViewController.h */,
@@ -267,9 +268,6 @@
 		3DE4600E190984D8002AF3C0 /* CoffeeNotes */ = {
 			isa = PBXGroup;
 			children = (
-				3DE46017190984D8002AF3C0 /* AppDelegate.h */,
-				3DE46018190984D8002AF3C0 /* AppDelegate.m */,
-				3DE4601A190984D8002AF3C0 /* Main.storyboard */,
 				3DD8873C190B11E7002521AD /* Model */,
 				3DD8873D190B11FA002521AD /* View */,
 				3DFF2FB7190C60F600D465F4 /* Controller */,
@@ -299,6 +297,8 @@
 		3DFF2FB7190C60F600D465F4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3DE46017190984D8002AF3C0 /* AppDelegate.h */,
+				3DE46018190984D8002AF3C0 /* AppDelegate.m */,
 				3DFF2FB4190C60F100D465F4 /* UIColor+ColorScheme.h */,
 				3DFF2FB5190C60F100D465F4 /* UIColor+ColorScheme.m */,
 				3D259470191BF47A00AD0326 /* ImageTransformer.h */,

@@ -41,6 +41,7 @@
 @property (strong, nonatomic) UIActionSheet *addOrChangePhotoActionSheet;
 @property (nonatomic) BOOL usingCamera;
 @property (nonatomic) BOOL dateNotNeeded;
+@property (nonatomic) BOOL imageChanged;
 
 @end
 
@@ -59,6 +60,7 @@
     _brewingMethodTextField.delegate    = self;
     _notesTextView.delegate             = self;
     _dateNotNeeded                      = NO;
+    _imageChanged                       = NO;
     
     if (_editableCoffee) {
         _nameOrOriginTextField.text                         = _editableCoffee.nameOrOrigin;
@@ -167,10 +169,15 @@
         newCupping.brewingMethod    = _brewingMethodTextField.text;
         
         NSNumber *numberFromFloatValue  = [[NSNumber alloc]initWithFloat:_coffeeCuppingRatingView.value];
+       
         newCupping.rating               = numberFromFloatValue;
-        newCupping.photo                = _photoImageView.image;
-        newCupping.cuppingNotes         = _notesTextView.text;
+       
+        if (_imageChanged == YES) {
+            newCupping.photo                = _photoImageView.image;
+            _imageChanged = NO;
+        }
         
+        newCupping.cuppingNotes         = _notesTextView.text;
         newCupping.coffee = _editableCoffee;
         
         [[DataController sharedController].objectContext save:&error];
@@ -255,6 +262,7 @@
         return;
     }
     
+    _imageChanged = YES;
     [self showPickerWithSourceType:sourceType];
 }
 

@@ -34,7 +34,7 @@
             NSLog(@"Loading from path: %@", self.photoPath);
             _photo = [UIImage imageWithContentsOfFile:self.photoPath];
         } else {
-            _photo = [UIImage imageNamed:@"cupping-detail"];
+            _photo = [UIImage imageNamed:@"cupping-detail@2x"];
         }
     }
     
@@ -68,5 +68,6 @@
                                                              inDomains:NSUserDomainMask] firstObject];
     return docsURL.path;
 }
+
 
 @end

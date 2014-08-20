@@ -34,6 +34,7 @@
 
 // other
 @property (strong, nonatomic) UIActionSheet *addOrChangePhotoActionSheet;
+@property (nonatomic) BOOL imageChanged;
 
 @end
 
@@ -46,8 +47,9 @@
     
 //    AppDelegate *appDelegate                = [UIApplication sharedApplication].delegate;
 
-    _nameOrOriginLabel.text       = _selectedCoffee.nameOrOrigin;
+    _nameOrOriginLabel.text             = _selectedCoffee.nameOrOrigin;
     _roasterLabel.text                  = _selectedCoffee.roaster;
+    _imageChanged                       = NO;
     
     _locationTextField.delegate         = self;
     _brewingMethodTextField.delegate    = self;
@@ -149,7 +151,11 @@
         newCupping.rating               = [[NSNumber alloc] initWithFloat:_cuppingRatingView.value];
         newCupping.brewingMethod        = _brewingMethodTextField.text;
         newCupping.cuppingNotes         = _notesTextView.text;
-        newCupping.photo                = _photoImageView.image;
+        
+        if (_imageChanged == YES) {
+            newCupping.photo                = _photoImageView.image;
+        }
+        
         newCupping.cuppingDate          = _cuppingDateHolder;
         newCupping.roastDate            = _roastDateHolder;
         
@@ -225,6 +231,7 @@
         return;
     }
     
+    _imageChanged = YES;
     [self showPickerWithSourceType:sourceType];
 }
 
