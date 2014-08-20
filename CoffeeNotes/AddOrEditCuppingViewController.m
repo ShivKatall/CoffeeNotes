@@ -154,6 +154,7 @@
         
         if (_imageChanged == YES) {
             newCupping.photo                = _photoImageView.image;
+            _imageChanged = NO;
         }
         
         newCupping.cuppingDate          = _cuppingDateHolder;
